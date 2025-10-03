@@ -8,7 +8,7 @@ Multiple-Choice Questions on Software Engineering
 1. Programming focuses on application design, while software engineering focuses on the performance of the code on physical hardware.
 2. _**Programming is writing and designing code using a programming language; software engineering uses engineering principles independent of any specific programming language**_ 
 3. Programming involves unit testing the code as it is developed; software engineering defers testing until the application is fully ready to be deployed
-4. Programming is for business facing systems; software engineering is for code that will run in high-preformance embedded systems.
+4. Programming is for business facing systems; software engineering is for code that will run in high-performance embedded systems.
 5. Do not know
 
 ---

@@ -34,7 +34,7 @@ Multiple-Choice Questions on Functional Programming
 4 Higher-order functions are functions that:
 1. Can rewrite themselves on the fly
 2. Use first-order propositional loging as code
-3. _**Can take other functions as arguments or return functions_**
+3. _**Can take other functions as arguments or return functions**_
 4. All of the above
 5. Do not know
 
@@ -61,7 +61,7 @@ Multiple-Choice Questions on Functional Programming
 7 In functional programming, a stream is:
 1. _**A pipeline of functions applied to data**_
 2. A mutable collection of variables
-3. Any Java collections
+3. Any Java collection
 4. A function where the data type of the input and output are the same
 5. Do not know
 

@@ -7,7 +7,7 @@ Multiple-Choice Questions on Object-Oriented Programming
 1 Object-oriented programming initially emphasized:
 1. Using objects for data storage instead of enterprise database systems
 2. Faster execution speed by using concurrent programming
-3. _**Decoupling interface usability from the implementation design_**
+3. _**Decoupling interface usability from the implementation design**_
 4. Cross-platform portability of code
 5. Do not know
 
@@ -15,7 +15,7 @@ Multiple-Choice Questions on Object-Oriented Programming
 
 2 The OO domain model represents a system as:
 1. A set of agents that execute the system functionality on dedicated hardware
-2. A _**set of objects the users are familiar with working together_**
+2. _**A set of conceptual objects the users are familiar with**_
 3. A set of subsystems with modular interfaces
 4. None of the above
 5. Do not know
@@ -41,7 +41,7 @@ Multiple-Choice Questions on Object-Oriented Programming
 ---
 
 5 An object’s interface defines:
-1. _**Messages that can be made and expected results returned_**
+1. _**Messages that can be sent to it and expected results returned**_
 2. The boundary between the inherited and non-inherited methods
 3. The internal representation of an object's internal data
 4. Objects don't have interfaces, only classes have interfaces
@@ -59,7 +59,7 @@ Multiple-Choice Questions on Object-Oriented Programming
 ---
 
 7 The first high level OO language was 
-1. _**Simula_**
+1. _**Simula**_
 2. Smalltalk
 3. C++
 4. Java

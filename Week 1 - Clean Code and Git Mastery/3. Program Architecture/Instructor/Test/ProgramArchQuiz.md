@@ -13,7 +13,7 @@ Multiple-Choice Questions on Program Architecture
 
 ---
 
-2 Which programming paradigm became mainstream in the 1990s due to the rise of the internet?
+2 Which programming paradigm became mainstream in the 1990s due to the rise of the Internet?
 1. Structured programming
 2. Functional programming
 3. Declarative programming
@@ -25,15 +25,15 @@ Multiple-Choice Questions on Program Architecture
 3 Most modern languages (like Rust, Go, Julia) are designed to:
 1. Only support one paradigm
 2. **_Support multiple paradigms_**
-3. Support micro-services
-4. Replace the older structured programming styleS
+3. Support microservices
+4. Replace the older structured programming styles
 5. Do not know
 
 ---
 
 4 What mechanism do most languages provide to scale codebases smoothly?
 1. Libraries of reusable code
-2. **_Modules**
+2. **_Modules_**
 3. Abstraction and encapsulation
 4. None of the above
 5. Do not know
@@ -60,7 +60,7 @@ Multiple-Choice Questions on Program Architecture
 
 7 Declarative programming emphasizes:
 1. Defining control flow directly
-2. _**Specifying what the result should be_** 
+2. _**Specifying what the result should be**_ 
 3. The use of objects and functions
 4. Avoiding using statements and expressions in code.
 5. Do not know
@@ -80,15 +80,15 @@ Multiple-Choice Questions on Program Architecture
 1. The popularity of Cloud Computing
 2. Increased human interaction over the Internet
 3. Improved virtualization tools
-4. **_Big Data and the Internet of Things_**
+4. **_Big Ddta and the Internet of Things_**
 5. Do not know
 
 ---
 
 10 In imperative programming, code is:
 1. A description of the final result
-2. Not allowed in pure functional programming languages like Haskell
-3. _**A series of instructions executed step by step_** 
+2. Not allowed in functional programming languages 
+3. _**A series of instructions executed step by step**_ 
 4. None of the above
 5. Do not know
 

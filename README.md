@@ -7,42 +7,41 @@ I will be reviewing and proofreading all the materials before Oct 4
 ## Week 1 Clean Code and Git Mastery
 
 ### 1.1 Software Engineering
-- Complete
+- Complete and proofed
 
 ### 1.2 Design Principles
-- Complete
+- Complete and proofed
 
 ### 1.3 Program Architecture
-- Complete
+- Complete and proofed
 
 ### 1.4 Clean Code Basics
-- Complete
+- Complete and proofed
 
 ### 1.5 Git Basics
-- Complete
+- Complete and proofed
 
 ---
 
 ## Week 2 - OOP and SOLID Principles
 
 ### 2.1 Structured Program Design
-- Complete
+- Complete and proofed
 
 ### 2.2 OO Program Design
-- Complete
+- Complete and proofed
 
 ### 2.3 Functional Program Design
-- Complete
+- Complete and proofed
 
 ### 2.4 SOLID
-- Complete
+- Complete and proofed
 
 ### 2.5 Design Patterns
-- Complete
+- Complete and proofed
 
 ### 2.6 APIs and REST
-- Developing Lab
-- Otherwise complete
+- Complete and proofed
 
 ## Week 3 - Real World Engineering
 

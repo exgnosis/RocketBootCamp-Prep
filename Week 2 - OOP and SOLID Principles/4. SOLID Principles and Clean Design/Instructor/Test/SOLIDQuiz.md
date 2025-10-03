@@ -5,9 +5,9 @@ Multiple-Choice Questions on SOLID
 
 1 What is the main idea behind the Single Responsibility Principle?
 1. A class must inherit from only one superclass.
-2. A class should implement all business logic.
+2. A class should implement all related business logic.
 3. Automated testing frameworks should be part of each class
-4. _**Design guidelines for improving cohesion_**
+4. _**Design guidelines for improving cohesion**_
 5. Do not know
 
 ---
@@ -31,9 +31,9 @@ Multiple-Choice Questions on SOLID
 ---
 
 4 Which scenario is a violation of Liskov Substitution Principle?
-1. A subclass adds new helper methods
+1. **_A subclass overrides a superclass method implementation_** 
 2. A subclass implements additional interfaces
-3. Modularization
+3. A subclass method calls the superclass method as part of its implementation
 4. A subclass extends abstract methods
 5. Do not know
 
@@ -43,7 +43,7 @@ Multiple-Choice Questions on SOLID
 1. One large interface for all clients
 2. Interfaces must never be changed
 3. **_Splitting interfaces into smaller, specific ones_**
-4. Every class must implement all interfaces
+4. Every class must implement at least interface
 5. Do not know
 
 ---
@@ -57,11 +57,11 @@ Multiple-Choice Questions on SOLID
 
 ---
 
-7 A data dictionary defines
-1. Application source code variable names
-2. _**The structure, fields, and relationships of data records_**
-3. A listing of the different names used in a database
-4. Rules for allowed use of the data in the application
+7 Which is an example of a code smell that should be refactored?
+1. A method that has no comments to explain the code
+2. _**A class with more than 2,000 lines of code and multiple unrelated responsibilities.**_
+3. A function that returns references to objects.
+4. All of the above.
 5. Do not know
 
 ---
@@ -78,7 +78,7 @@ Multiple-Choice Questions on SOLID
 9 Why is encapsulation important in clean design?
 1. It exposes all details for debugging
 2. **_It hides internal details and prevents misuse_**
-3. It increases coupling between classes
+3. It increases cohesion between classes
 4. It makes classes dependent on implementation
 5. Do not know
 

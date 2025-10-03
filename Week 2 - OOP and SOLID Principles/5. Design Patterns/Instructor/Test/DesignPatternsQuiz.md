@@ -11,7 +11,7 @@ Multiple-Choice Questions on Design Patterns
 5. Do not know
 
 
-2 Which of the following best describes the three categories of standard Gang of FOur design patterns?
+2 Which of the following best describes the three categories of standard Gang of Four design patterns?
 1. Abstract, Concrete, and Composite
 2. _**Creational, Structural, and Behavioral**_ 
 3. Object-Oriented, Functional, and Procedural
@@ -48,9 +48,10 @@ Multiple-Choice Questions on Design Patterns
 
 7 Why are antipatterns important?
 1. Because antipatterns often become the foundation for new design patterns
-2. _**Because understanding them helps identify recurring ineffective practices and designs and their remediation._** 
+2. **_Because understanding them helps identify recurring ineffective practices and designs and their remediation._** 
 3. Because they are officially documented as risks in secure coding
-4. None of the above
+4. Because they identify which code should be tested more rigorously
+5. None of the above
 
 8 Which of these is not a benefit of using design patterns?
 1. Standard vocabulary for developers
@@ -70,5 +71,5 @@ Multiple-Choice Questions on Design Patterns
 1. A design pattern always produces the most efficient solution
 2. A design pattern is language-specific, while an algorithm is language-independent
 3. An algorithm focuses on structure, while a design pattern focuses only on syntax 
-4. **_An algorithm is a step-by-step procedure, while a pattern is a reusable design template for solving a class of problems**_ 
+4. **_An algorithm is a step-by-step procedure, while a pattern is a reusable design template for solving a class of problems_**
 5. Do not know

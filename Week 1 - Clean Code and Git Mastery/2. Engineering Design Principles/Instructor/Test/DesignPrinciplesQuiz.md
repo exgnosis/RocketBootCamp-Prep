@@ -33,7 +33,7 @@ Multiple-Choice Questions on Design Principles
 
 4 What does high coupling typically result in?
 1. Highly cohesive components
-2. **_Brittle and unusable systems_**
+2. **_Brittle and unstable systems_**
 3. Decreased technical debt
 4. Isolation of failures
 5. Do not know
@@ -88,7 +88,7 @@ Multiple-Choice Questions on Design Principles
 10 Development scaling in software refers to:
 1. Designing more features for future releases
 2. Increasing the number of programmers on a project
-3. **_Increasing the complexity and size of the code base**_ 
+3. **_Increasing the complexity and size of the code base_** 
 4. All of the above
 5. Do not know
 

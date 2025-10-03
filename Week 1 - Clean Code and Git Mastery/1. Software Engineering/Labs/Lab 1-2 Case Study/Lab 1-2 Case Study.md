@@ -4,7 +4,7 @@
 
 To illustrate some of the software engineering concepts, you will examine a famous failure of the Denver Airport Luggage System.
 
-You will work in groups to do the following
+You will work in groups to do the following:
 - Study the relevant documents
 - Identify the factors that caused the failure
 - Lay out a high-level plan of how you would have done the project to maximize its probability of success
@@ -26,18 +26,18 @@ You will work in groups to do the following
 
 ## Analysis
 - There are two detailed analyses of the project in the lab folder.
-- Review one or both of them
+- Review one or both of them.
 
 #### Causative Factors
 - Make a list of the engineering failures that occurred during the project
-- Explain these in the context, where you can, of the ideas we discussed in this section
+- Explain, where you can, these failures in the context of the ideas we discussed in this section
 
 ## Solution
 - Your group should present a brief overview how applying software engineering practices could have avoided the project failure.
 
 ## Assessment
 - There is no right answer 
-- Your group will have to convince the class of the validity of your plan
+- Your group will have to convince the class of the validity of your plan.
 
 
 ## End

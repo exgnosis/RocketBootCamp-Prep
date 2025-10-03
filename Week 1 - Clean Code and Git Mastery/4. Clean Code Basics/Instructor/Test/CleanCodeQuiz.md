@@ -17,7 +17,7 @@ Multiple-Choice Questions on Clean Code
 1. Writing code without tests because there are no testers available
 2. **_Skipping unit tests to release a hotfix_**
 3. Using outdated technology unknowingly
-4. Refactoring a class to improve Sreadability
+4. Refactoring a class to improve readability
 5. Do not know
 
 ---
@@ -33,7 +33,7 @@ Multiple-Choice Questions on Clean Code
 
 4 Good comments in clean code should primarily explain:
 1. What the code does
-2. **_Why the code is written that way_**
+2. **_Why the code is designed that way it is_**
 3. Every line of the code
 4. What the variable names mean
 5. Do not know
@@ -59,7 +59,7 @@ Multiple-Choice Questions on Clean Code
 ---
 
 7 What does the Law of Demeter recommend?
-1. **_Components should only interact with nearby components_**
+1. **_Components should prefer to interact with nearby components_**
 2. Avoid overly long names for classes and functions
 3. Always use inheritance
 4. Prefer using classes for data encapsulation rather then structures

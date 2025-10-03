@@ -46,7 +46,7 @@ I will be reviewing and proofreading all the materials before Oct 4
 ## Week 3 - Real World Engineering
 
 ### 3.1 Debugging
-- Complete
+- Complete and proofed
 
 ### 3.2 Secure Coding
 - Lab to be added

@@ -14,7 +14,7 @@ Multiple-Choice Questions on Debugging
 ---
 
 2 A syntax bug is typically caught by:
-1. _**IDEs and compilers_**
+1. _**IDEs and compilers**_
 2. Manual tracing
 3. Code walkthroughs
 4. Runtime checks
@@ -26,7 +26,7 @@ Multiple-Choice Questions on Debugging
 1. **_A bug that disappears when observed_**
 2. A deterministic bug found in every execution of the code
 3. A configuration mismatch
-4. A bug that only appears in integration
+4. A bug that only appears during an integration build
 5. Do not know
 
 ---
@@ -60,7 +60,7 @@ Multiple-Choice Questions on Debugging
 
 7 A watchpoint in a debugger is triggered when:
 1. Execution reaches a certain function
-2. _**A variable changes its value_**
+2. _**A variable changes its value**_
 3. A program compiles successfully
 4. None of the above
 5. Do not know

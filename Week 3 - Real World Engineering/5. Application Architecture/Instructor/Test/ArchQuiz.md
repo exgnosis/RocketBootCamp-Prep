@@ -6,14 +6,14 @@ Multiple-Choice Questions on Application Architecture
 
 1 In a monolithic application, changing the data schema usually means:
 1. Only redeploying one module
-2. _**Redeploying the entire application_**
+2. _**Redeploying the entire application**_
 3. Redeploying only the database layer
 4. No redeployment required
 5. Do not know
 
 ---
 
-2 Scaling can take place in two spaces:
+2 Scaling can take place along which dimensions:
 1. Testing and production
 2. APIs and servers
 3. **_Development and operations_**
@@ -33,7 +33,7 @@ Multiple-Choice Questions on Application Architecture
 
 4 Microservices model which of the following?
 1. Entire enterprise systems in one unit
-2. _**Business domains or activities_**
+2. _**Business domains or activities**_
 3. Databases only
 4. Cloud infrastructure
 5. Do not know
@@ -60,7 +60,7 @@ Multiple-Choice Questions on Application Architecture
 
 7 Logs in the 12-Factor approach should be treated as:
 1. Static files written to disk
-2. _**Event streams aggregated from all processes_**
+2. _**Event streams aggregated from all processes**_
 3. Static reports stored in the database
 4. Metrics captured only in production
 5. Do not know
@@ -68,7 +68,7 @@ Multiple-Choice Questions on Application Architecture
 ---
 
 8 What does "Disposability" mean in 12 Factor principles?
-1. _**Applications should minimize startup and shut down gracefully_**
+1. _**Applications should minimize startup and shut down gracefully**_
 2. Applications must never be restarted
 3. Jobs cannot be re-entrant
 4. Services should avoid failure recovery mechanisms

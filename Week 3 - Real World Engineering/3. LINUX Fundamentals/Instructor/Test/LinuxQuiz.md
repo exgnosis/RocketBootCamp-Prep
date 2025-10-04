@@ -44,6 +44,7 @@ Multiple-Choice Questions on Linux Basics
 1. Once during system boot
 2. When user logs in
 3. **_Every time a new interactive shell is started_**
+4. None of the above
 5. Do not know
 
 ---
@@ -84,7 +85,7 @@ Multiple-Choice Questions on Linux Basics
 
 ---
 
-10 The command ls -l | grep ".txt" does what?
+10 The command `ls -l | grep ".txt"` does what?
 1. Displays all files, then deletes .txt files
 2. **_Lists .txt files in long format_**
 3. Searches for .txt files in /etc

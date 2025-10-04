@@ -49,20 +49,17 @@ I will be reviewing and proofreading all the materials before Oct 4
 - Complete and proofed
 
 ### 3.2 Secure Coding
-- Lab to be added
+- Complete and proofed
 
 ### 3.3 UNIX Fundamentals
-- Labs to be reformated
-- Otherwise complete
+- Complete and proofed
 
 ### 3.4 Shell Scripting
-- Labs to be reformmated
-- Quiz to be added
-- Otherwise Complete
+- Complete and proofed
 
 ### 3.4 Application Architecture
 - Lab to be added
-- Otherwise complete
+- Complete and proofed
 
 ## Week 4 - Unit Testing, TDD, Mocking, CICD, Persistence
 

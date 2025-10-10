@@ -58,7 +58,7 @@ I will be reviewing and proofreading all the materials before Oct 4
 - Complete and proofed
 
 ### 3.4 Application Architecture
-- Lab to be added
+
 - Complete and proofed
 
 ## Week 4 - Unit Testing, TDD, Mocking, CICD, Persistence

@@ -66,7 +66,7 @@ I will be reviewing and proofreading all the materials before Oct 4
 - Complete and proofed
 
 ### 4.2 Test Driven Development
-- In progress
+- Complete except for lab
 
 ### 4.3 Refactoring
 - In progress

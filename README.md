@@ -66,13 +66,13 @@ I will be reviewing and proofreading all the materials before Oct 4
 - Complete and proofed
 
 ### 4.2 Test Driven Development
-- Complete except for lab
+- Completed and proofed
 
 ### 4.3 Refactoring
-- In progress
+- Completed and proofed
 
 ### 4.4 CICD Basics
-- In progress
+- Completed and proofed
 
 ### 4.5 Persistence
-- Completed
+- Completed and proofed

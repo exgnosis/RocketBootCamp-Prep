@@ -60,7 +60,7 @@ Multiple-Choice Questions on Software Engineering
 
 7 CICD is:
 1. An Agile methodology
-2. _**Process automation applied to software engineering_** 
+2. _**Process automation applied to software engineering**_ 
 3. An automated continuous testing framework
 4. None of the above
 5. Do not know

@@ -1,4 +1,4 @@
-## Notes for Jonathan
+## Notes for The Instructor
 
 The first lab is just getting the VMs set up.
 - Put it as a lab to allow for you to run it as an activity
@@ -9,12 +9,19 @@ The second lab is a case study.
 - If you have a favourite alternative, feel free to substitute
 - I also felt making the first operational lab a group exercise could be used as a kickoff.
 
-I have tried to give a sense of the emergence of SE being driven by specific needs.
+The third lab is a review of where using AI in a software project might go terribly wrong. This section is meant to be a bit of a "reality check" for students who might have only been exposed to the hype around AI used for software development.
+
+This lab is intended to act as a set-up or context preparation for the introduction of using AI for development in later modules.
+
+#### Suggestions
+
+I have tried to give a sense of the emergence of SE being driven by specific needs in the industry to design, build and deploy effective and efficient software.
 - When I teach this sort of thing I draw on my actual experiences with it so it's not just academic
 - Feel free to add or alter based on your own similar experiences 
 
 The part on process types is where I try to clarify what the difference is between Agile and others. 
-- The adaptive/predictive model seems to work well since iterative methods are not just software based but even in software predate Agile
+- The adaptive/predictive model seems to work well since iterative methods are not just software based but even in software predate the introduction of what we now think of as Agile
+- In addition, Agile is software development is essentially an adaptation of more adaptive engineering processes in other fields like Lean Engineering
 - I find that a lot of students have a rather incomplete idea of what Agile is and what it does.
 - The DevOps and CICD are introduced in a later week in more detail but introduced here to also clarify distinctions.
 

@@ -3,12 +3,14 @@
 ## Part 1: Verifying git
 
 - Log into your VM
-- Create  new directory. In these note we are using `lab1` 
+- Open the Terminal app
+  - Hint: The up arrow lets you cycle through your previous commands. This will be useful later in the lab
+- Create a new directory. In these notes we are using `lab1` 
 - Locate to the directory you just created
 - Check the version of git `git --version`
 - Check the configuration
   - You can't make any commits unless you have a name and email recorded since git needs to track who made a commit.
-  - The user email is added since name are not going to be unique, but we can often make a reasonable assumption that emails are unique identifies
+  - The user email is added since names are not going to be unique, but we can often make a reasonable assumption that emails are unique identifiers
 
 ```bash
 protech@studentvm:~$ mkdir lab1
@@ -71,7 +73,6 @@ total 8
 drwxrwxr-x 2 protech protech 4096 Sep  2 13:49 info
 drwxrwxr-x 2 protech protech 4096 Sep  2 13:49 pack
 
-total 0
 ```
 
 ---
@@ -130,7 +131,7 @@ Changes to be committed:
   - This means that the contents of the repository are the same as the working directory
 
 ```bash
-rotech@studentvm:~/lab1$ git commit -m "First commit"
+protech@studentvm:~/lab1$ git commit -m "First commit"
 [main (root-commit) 0e426de] First commit
  1 file changed, 1 insertion(+)
  create mode 100644 file.txt
@@ -155,7 +156,7 @@ nothing to commit, working tree clean
 - The second commit is shown below
 
 ```bash
-protech@studentvm:~/lab1$ echo  "This is line 2" >> file.txt
+protech@studentvm:~/lab1$ echo "This is line 2" >> file.txt
 protech@studentvm:~/lab1$ cat file.txt
 This is some text
 This is line 2
@@ -164,8 +165,7 @@ protech@studentvm:~/lab1$ git add file.txt
 protech@studentvm:~/lab1$ git commit -m "Second commit"
 [main e5c5b41] Second commit
  1 file changed, 1 insertion(+)
- 
- 
+
 protech@studentvm:~/lab1$ git log
 commit e5c5b412676f38a5f15fba00af47bc34e648d723 (HEAD -> main)
 Author: Rocket Student <noone@nowhere.com>
@@ -179,11 +179,15 @@ Date:   Tue Sep 2 14:06:57 2025 -0400
 
     First commit
     
-rotech@studentvm:~/lab1$ git ll
+protech@studentvm:~/lab1$ git ll
 * e5c5b41 (HEAD -> main) Second commit
 * 0e426de First commit
 ```
+- Now do the above step two more times in total so that you make two new commits
+  - Each time the `file.txt` contents will have one more line added
+  - For each new line do the add and the commit with a new commit message
 - Your final result should look like this:
+
 
 ```bash
 protech@studentvm:~/lab1$ cat file.txt
@@ -203,7 +207,7 @@ commit 06da0ab052e771d59a43cf8f9bc6e166c439a665
 Author: Rocket Student <noone@nowhere.com>
 Date:   Tue Sep 2 14:17:09 2025 -0400
 
-    third commit
+    Third commit
 
 commit e5c5b412676f38a5f15fba00af47bc34e648d723
 Author: Rocket Student <noone@nowhere.com>
@@ -225,11 +229,12 @@ protech@studentvm:~/lab1$ git ll
 
 ```
 
-- Now check the blog directory
+- Now check the blob directory
 - You will see blobs but your hash codes you see might be different from the ones shown here.
 - The hash codes are arranged in a tree to make retrieval faster
 
 ```bash
+protech@studentvm:~/lab1$ cd .git/objects
 protech@studentvm:~/lab1/.git/objects$ ls -l
 total 48
 drwxrwxr-x 2 protech protech 4096 Sep  2 14:17 06
@@ -252,4 +257,4 @@ drwxrwxr-x 2 protech protech 4096 Sep  2 13:49 pack
 
 ---
 
-# End Lab 1
+# End Lab 5-1

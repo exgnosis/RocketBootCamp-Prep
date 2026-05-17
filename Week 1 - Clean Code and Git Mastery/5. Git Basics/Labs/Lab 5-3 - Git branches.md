@@ -1,14 +1,14 @@
-# Lab 3 - Git Branching
+# Lab 5-3 - Git Branching
 
-- Create a new repository in a director call `gitlab`
+- Create a new repository in a directoyr called `branchlab`
 
 ```bash
-rotech@studentvm:~$ mkdir branchlab
+protech@studentvm:~$ mkdir branchlab
 protech@studentvm:~$ cd branchlab
 protech@studentvm:~/branchlab$ git init
 Initialized empty Git repository in /home/protech/branchlab/.git/
 ``` 
- 
+
 ## Part 1: Create a file
 
 - Create a file `branch.txt`
@@ -17,7 +17,7 @@ Initialized empty Git repository in /home/protech/branchlab/.git/
 - Or just create it at the command line
 
 ```bash
-echo "This is the main branch" >> branch.txt
+protech@studentvm:~/branchlab$ echo "This is the main branch" >> branch.txt
 protech@studentvm:~/branchlab$ cat branch.txt
 This is the main branch
 
@@ -72,6 +72,7 @@ This is added in dev
 - Commit the changes
 
 ```bash
+protech@studentvm:~/branchlab$ git status
 On branch dev
 Changes not staged for commit:
  	modified:   branch.txt
@@ -114,7 +115,7 @@ This is the main branch
 - Check the log to see which commit is being shown in the working directory
 
 ```bash
-git log
+protech@studentvm:~/branchlab$ git log
 commit c7b2c628e823e3deb7d469bf9d51515635cec6fc (HEAD -> main)
 Author: Rocket Student <noone@nowhere.com>
 Date:   Sat Sep 27 18:37:00 2025 -0400
@@ -123,7 +124,7 @@ Date:   Sat Sep 27 18:37:00 2025 -0400
 
 ```
 
-- Notice that the `main` branch does not know about any commits past the one that it is pointing too
+- Notice that the `main` branch does not know about any commits past the one that it is pointing to
 
 - Switch back and forth between the branches so you can confirm the files are different.
 
@@ -182,4 +183,4 @@ protech@studentvm:~/branchlab$
 
 ```
 
-## End
+## End Lab 5-3

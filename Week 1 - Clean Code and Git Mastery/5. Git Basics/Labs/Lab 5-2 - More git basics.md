@@ -1,14 +1,15 @@
-# Lab 2 - Git Basics Continued
+# Lab 5-2 - Git Basics Continued
 
 - This lab picks up where the last lab left off.
-- You should be located the `lab1` directory
+- You should be located in the `lab1` directory
+- "If you closed your terminal, navigate back with cd ~/lab1.
 
 ## Part 1: Restoring a file
 
-- Delete the file `file.txt`
-- Confirm it's gone.
+- Delete the file `file.txt` with `rm file.txt`
+- Confirm it's gone by running `ls`
 - Then restore it using `git restore file.txt`
-- Confirm it's been restored
+- Confirm it's been restored, also with `ls`
 - By default, it is restored from the commit that is referenced by `HEAD`
 
 ```bash
@@ -33,9 +34,9 @@ This is line 4
 ```
 
 - The `restore` command will overwrite the file if it already exists in the working directory
-- Add some random content to `file.txt` in your working directory
+- Add some random content to `file.txt` in your working directory (e.g., `echo "this is line 5" >> file.txt`)
 - Confirm the changes are there
-- Restore the file and confirm your change are gone
+- Restore the file and confirm your changes are gone
 
 ```bash
 protech@studentvm:~/lab1$ cat file.txt
@@ -43,7 +44,7 @@ This is some text
 This is line 2
 This is line 3
 This is line 4
-this is line 5
+This is line 5
 
 protech@studentvm:~/lab1$ git restore file.txt
 
@@ -60,19 +61,17 @@ This is line 4
 
 ## Part 2: Restoring from different commit
 
-- We can also specify the commit that we want to restore from
-- First, use `git ll` to get a list of the commits
-- _Don't copy the values shown here because yours will be different, that's why you need to list your commits_
-- The command is `git restore file.txt --course <hash>`
+-- We can also specify the commit that we want to restore from
+- The command is `git restore file.txt --source <hash>`
+- First, use `git ll` to get a list of the commits and pick the hash you want
+- _Don't copy the values shown here, yours will be different. That's why you need to list your own commits._
+- Restore `file.txt` as it was in the second commit (in this example, `e5c5b41`)
 
-
-- Restore `file.txt` as it was in the second commit.
-  - In this example that has the code `e5c5b41`
 
 ```bash
 protech@studentvm:~/lab1$ git ll
 * 31c2ebd (HEAD -> main) Fourth commit
-* 06da0ab third commit
+* 06da0ab Third commit
 * e5c5b41 Second commit
 * 0e426de First commit
 
@@ -119,11 +118,11 @@ protech@studentvm:~/lab1$ cat file.txt
 This is some text
 ```
 
-- Now restore the latest version
+- Now restore file.txt to the latest committed version
 - Note that if we leave the --source parameter out, it defaults to `HEAD`
 
 ```bash
-git restore file.txt --source HEAD
+protech@studentvm:~/lab1$ git restore file.txt --source HEAD
 protech@studentvm:~/lab1$ cat file.txt
 This is some text
 This is line 2
@@ -136,18 +135,19 @@ This is line 4
 ## Part 3: Restoring a Previous Commit
 
 - `git restore` works on individual files
-- `get checkout` works on a whole commit
-- Checkout the second commit
-
+- `git checkout` switches your entire working directory to match a whole commit
+- We're going to check out the second commit, which will change the state of every tracked file
+- 
 ```bash
 protech@studentvm:~/lab1$ git ll
 * 31c2ebd (HEAD -> main) Fourth commit
-* 06da0ab third commit
+* 06da0ab Third commit
 * e5c5b41 Second commit
 * 0e426de First commit
 ```
 - Counting backwards from `HEAD`, it would be `HEAD~2`
-- Check it out
+- Check it out with `git checkout HEAD~2`
+- Note that you are now in "detached HEAD" state, which means that `HEAD` is not pointing to a branch, but directly to a commit
 
 ```bash
 protech@studentvm:~/lab1$ git checkout HEAD~2
@@ -172,12 +172,14 @@ HEAD is now at e5c5b41 Second commit
 
 ```
 
-- Use the `git ll` command to confirm you are seeing the second commit - note where the HEAD pointer
+- Use `git ll` and notice that `HEAD` is now pointing at the second commit, while `main` is still pointing at the fourth commit
+- This is what "detached HEAD" means
+  - `HEAD` is no longer tied to a branch
 
 ```bash
 protech@studentvm:~/lab1$ git ll
 * 31c2ebd (main) Fourth commit
-* 06da0ab third commit
+* 06da0ab Third commit
 * e5c5b41 (HEAD) Second commit
 * 0e426de First commit
 
@@ -187,16 +189,24 @@ This is line 2
 ```
 
 - Now switch back with `git switch -`
-  - This resets the working directory to the commit the `main` branch is pointing to
-
+  - The `-` means "the previous branch" — like `cd -` in bash
+  - This resets the working directory to whatever commit `main` is pointing to
+  
 ```bash
-git switch -
+protech@studentvm:~/lab1$ git switch -
 Previous HEAD position was e5c5b41 Second commit
 Switched to branch 'main'
 protech@studentvm:~/lab1$ git ll
 * 31c2ebd (HEAD -> main) Fourth commit
-* 06da0ab third commit
+* 06da0ab Third commit
 * e5c5b41 Second commit
 * 0e426de First commit
 ```
 
+---
+
+### Do not delete your work, you may use it in a future lab
+
+---
+
+# End Lab 5-2

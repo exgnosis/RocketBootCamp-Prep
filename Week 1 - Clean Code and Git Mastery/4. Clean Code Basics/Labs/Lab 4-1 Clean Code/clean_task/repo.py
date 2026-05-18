@@ -1,36 +1,55 @@
-from __future__ import annotations
-from abc import ABC, abstractmethod
-from typing import List
-from .models import Task
+"""Task storage abstraction.
+
+Defines the TaskRepository protocol that the application service depends
+on, plus a default in-memory implementation. Swap the implementation to
+change where tasks are stored (file, database, remote service) without
+touching any other layer.
+"""
+
+from typing import Protocol
+
+from .models import Priority, Task
 
 
-class TaskRepository(ABC):
-    @abstractmethod
-    def list(self) -> List[Task]: ...
+class TaskRepository(Protocol):
+    """The storage operations the application needs."""
+
+    def add(self, title: str, priority: Priority) -> Task: ...
+    def list(self) -> list[Task]: ...
+    def find_by_id(self, task_id: int) -> Task | None: ...
+    def mark_done(self, task_id: int) -> bool: ...
+    def change_priority(self, task_id: int, new_priority: Priority) -> bool: ...
 
 
-    @abstractmethod
-    def add(self, task: Task) -> None: ...
+class InMemoryTaskRepository:
+    """A simple dict-backed store. Preserves insertion order."""
 
+    def __init__(self) -> None:
+        self._storage: dict[int, Task] = {}
+        self._next_id: int = 1
 
-    @abstractmethod
-    def update(self, index: int, task: Task) -> None: ...
+    def add(self, title: str, priority: Priority) -> Task:
+        task = Task(id=self._next_id, title=title, priority=priority)
+        self._storage[self._next_id] = task
+        self._next_id += 1
+        return task
 
+    def list(self) -> list[Task]:
+        return list(self._storage.values())
 
-class InMemoryTaskRepository(TaskRepository):
-    def __init__(self, initial=None):
-        self._tasks: List[Task] = list(initial or [])
+    def find_by_id(self, task_id: int) -> Task | None:
+        return self._storage.get(task_id)
 
+    def mark_done(self, task_id: int) -> bool:
+        task = self._storage.get(task_id)
+        if task is None:
+            return False
+        task.mark_done()
+        return True
 
-    def list(self) -> List[Task]:
-        return list(self._tasks)
-
-
-    def add(self, task: Task) -> None:
-        self._tasks.append(task)
-
-
-    def update(self, index: int, task: Task) -> None:
-        if index < 0 or index >= len(self._tasks):
-            raise IndexError("Task index out of range")
-        self._tasks[index] = task
+    def change_priority(self, task_id: int, new_priority: Priority) -> bool:
+        task = self._storage.get(task_id)
+        if task is None:
+            return False
+        task.change_priority(new_priority)
+        return True

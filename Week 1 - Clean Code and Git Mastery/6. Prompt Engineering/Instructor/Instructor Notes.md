@@ -10,3 +10,8 @@ The only lab in this section is the setup for Claude using VSCode.
 
 Since the setting up of the Claude accounts depend on who is running the class, there are no instructions for that. The lab assumes that the students have already set up their accounts and have access to the API keys.
 
+### Optional Lab
+
+I have added a version of lab 3-1 using copilot for refactoring.
+- I have made it optional since it is redundant but still interesting for students to pursue on their own.
+

@@ -1,45 +1,28 @@
-from typing import List
-from .models import Task
+"""Application service for the task tracker.
+
+Sits between the CLI and the repository. Translates raw input types
+(such as a plain int priority) into domain types, calls the repository,
+and returns results the CLI can render directly.
+"""
+
+from .models import Priority, Task
 from .repo import TaskRepository
 
 
 class TaskService:
-    def __init__(self, repo: TaskRepository):
-        self.repo = repo
+    def __init__(self, repository: TaskRepository) -> None:
+        self._repo = repository
 
+    def create_task(self, title: str, priority_value: int) -> Task:
+        priority = Priority.from_int(priority_value)
+        return self._repo.add(title, priority)
 
-    def list(self) -> List[Task]:
-        return self.repo.list()
+    def list_tasks(self) -> list[Task]:
+        return self._repo.list()
 
+    def complete_task(self, task_id: int) -> bool:
+        return self._repo.mark_done(task_id)
 
-    def add(self, title: str, priority: int = 2) -> Task:
-        title = (title or "").strip()
-        if not title:
-            raise ValueError("Title required")
-        if priority not in (1, 2, 3):
-            raise ValueError("Priority must be 1, 2, or 3")
-        task = Task(title=title, priority=priority)
-        self.repo.add(task)
-        return task
-
-
-    def mark_done(self, index: int) -> Task:
-        tasks = self.repo.list()
-        if index < 0 or index >= len(tasks):
-            raise IndexError("Task index out of range")
-        task = tasks[index]
-        task.mark_done()
-        self.repo.update(index, task)
-        return task
-
-
-    def set_priority(self, index: int, priority: int) -> Task:
-        if priority not in (1, 2, 3):
-            raise ValueError("Priority must be 1, 2, or 3")
-        tasks = self.repo.list()
-        if index < 0 or index >= len(tasks):
-            raise IndexError("Task index out of range")
-        task = tasks[index]
-        task.priority = priority
-        self.repo.update(index, task)
-        return task
+    def set_priority(self, task_id: int, priority_value: int) -> bool:
+        priority = Priority.from_int(priority_value)
+        return self._repo.change_priority(task_id, priority)

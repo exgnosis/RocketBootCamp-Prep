@@ -72,7 +72,7 @@ public class BadTaskApp {
 
 - Compile and run the code
 - From a Java functional perspective, the code compiles and executes.
-- Experiment with creating task and marking it done.
+- Experiment with creating a task and marking it done.
 - The code works, but it is a mess.
 
 ## Refactoring

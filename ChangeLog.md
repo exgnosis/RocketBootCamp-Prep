@@ -65,3 +65,33 @@ These are the added requirements for the June 8 delivery. These are in addition 
 
 ---
 
+## Week 2 OOP and Solid Principles
+
+### 1-1 Structured Program Design
+- No changes to slides
+- Lab 1-1 converted to the new format
+
+##### Lab 1-2 Copilot for Code Analysis
+- New lab
+- Walks students through a systematic process for using Copilot to analyze and understand some C code.
+
+### 1-2 OO Program Design
+- No changes to slides
+- Lab 2-1 converted to the new format
+
+### 1-3 Functional Program Design
+- No changes to the slides
+- Lab 3-1 converted to the new format
+
+### 1-4 SOLID Principles and Clean Desgin
+- No changes to the slides
+- Lab 4-1 converted to the new format
+
+##### Lab 4-2 Legacy Code
+- One of the requirement is for students to be able to use Copilot to understand code.
+- This lab emulates the problem of having to work with a legacy code base.
+- Old C, Java and COBOL code is provided
+- Students walk through a structured process of analyzing the code logic and structure
+- Students also do a refactoring cost/benefit analysis.
+- The legacy code is also not well written so students can analyze the code for code quality issues as well.
+ 

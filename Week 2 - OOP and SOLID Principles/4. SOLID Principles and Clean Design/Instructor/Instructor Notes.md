@@ -9,7 +9,7 @@ The lab was tested in the lab VM
 A lot of this SOLID, etc,  is restatements of the previous material
 - Just translated into different forms for different audiencee
 
-I have added an additional copilot lab on working with legacy code
-- This has been tested in my windows environment but not on the VM
+I have added a copilot lab on working with legacy code
+- This has been tested in my Linux environment but not on the VM
 
 

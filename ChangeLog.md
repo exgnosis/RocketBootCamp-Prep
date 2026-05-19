@@ -95,3 +95,11 @@ These are the added requirements for the June 8 delivery. These are in addition 
 - Students also do a refactoring cost/benefit analysis.
 - The legacy code is also not well written so students can analyze the code for code quality issues as well.
  
+### 1-5 Design Patterns
+- No changes to the slides
+- Lab 5-1 and 5-3 converted to the new format
+
+##### Lab 5-3 Copilot Refactoring
+- This is a new lab that uses copilot to refactor some monolithic Java code into a state pattern design.
+
+### 1-6 APIs and Rest

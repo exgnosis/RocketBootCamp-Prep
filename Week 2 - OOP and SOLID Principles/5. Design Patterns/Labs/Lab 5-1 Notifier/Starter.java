@@ -1,4 +1,15 @@
-// Main.java
+public class Starter {
+    public static void main(String[] args) {
+        // expected: [EMAIL] Build finished
+        Notifier n1 = NotifierFactory.create("email");
+        n1.send("Build finished");
+
+        // expected: [SMS] Deploy started
+        Notifier n2 = NotifierFactory.create("sms");
+        n2.send("Deploy started");
+    }
+}
+
 interface Notifier { void send(String msg); }
 
 class EmailNotifier implements Notifier {
@@ -15,17 +26,5 @@ class NotifierFactory {
     static Notifier create(String type) {
         // TODO
         return null;
-    }
-}
-
-public class Main {
-    public static void main(String[] args) {
-        // expected: [EMAIL] Build finished
-        Notifier n1 = NotifierFactory.create("email");
-        n1.send("Build finished");
-
-        // expected: [SMS] Deploy started
-        Notifier n2 = NotifierFactory.create("sms");
-        n2.send("Deploy started");
     }
 }

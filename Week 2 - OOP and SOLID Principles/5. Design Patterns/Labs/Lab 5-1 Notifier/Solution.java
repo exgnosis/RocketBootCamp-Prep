@@ -1,4 +1,16 @@
-// Main.java
+public class Solution {
+    public static void main(String[] args) {
+        Notifier n1 = NotifierFactory.create("email");
+        n1.send("Build finished");      // [EMAIL] Build finished
+
+        Notifier n2 = NotifierFactory.create("sms");
+        n2.send("Deploy started");      // [SMS] Deploy started
+
+        Notifier n3 = NotifierFactory.create("push");  // stretch
+        n3.send("System update available"); // [PUSH] System update available
+    }
+}
+
 interface Notifier {
     void send(String msg);
 }
@@ -33,18 +45,5 @@ class NotifierFactory {
             return new PushNotifier();
         }
         return null; // could also throw IllegalArgumentException
-    }
-}
-
-public class Main {
-    public static void main(String[] args) {
-        Notifier n1 = NotifierFactory.create("email");
-        n1.send("Build finished");      // [EMAIL] Build finished
-
-        Notifier n2 = NotifierFactory.create("sms");
-        n2.send("Deploy started");      // [SMS] Deploy started
-
-        Notifier n3 = NotifierFactory.create("push");  // stretch
-        n3.send("System update available"); // [PUSH] System update available
     }
 }

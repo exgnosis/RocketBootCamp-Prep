@@ -103,3 +103,10 @@ These are the added requirements for the June 8 delivery. These are in addition 
 - This is a new lab that uses copilot to refactor some monolithic Java code into a state pattern design.
 
 ### 1-6 APIs and Rest
+- Slides have been totally redoneMuch more detailed treatment of REST APIs and API design in general.
+- Lab 6-1 converted to the new format
+
+##### Lab 6-2 Copilot Design
+- This is the new lab that introduces a concept that will be elaborated on next week - the importance of writing a specification for an AI tool to use for direction
+
+

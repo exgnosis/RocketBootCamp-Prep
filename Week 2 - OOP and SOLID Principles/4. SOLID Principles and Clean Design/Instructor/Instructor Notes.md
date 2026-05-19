@@ -1,4 +1,4 @@
-## Notes for Jonathan
+## Instructor Notes
 
 Materials
 - I have added a number of free resources in the student folder that should be useful
@@ -8,4 +8,8 @@ The lab was tested in the lab VM
 
 A lot of this SOLID, etc,  is restatements of the previous material
 - Just translated into different forms for different audiencee
+
+I have added an additional copilot lab on working with legacy code
+- This has been tested in my windows environment but not on the VM
+
 

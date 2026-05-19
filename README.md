@@ -1,78 +1,35 @@
 # RocketBootCamp-Prep
 
-Prep repository for the people working on the Rocket Bootcamp Phase 1
+This repo is for bookcamp prep for the various incarnations of the Rocket bootcamp
 
-I will be reviewing and proofreading all the materials before Oct 4 
+This is version 2.0 of the bootcamp modified for the June 8 2026 Delivery
 
-## Week 1 Clean Code and Git Mastery
+Please consult the version 2 changelog for modifications that have been made to the original materials
 
-### 1.1 Software Engineering
-- Complete and proofed
+The student repository is a subset of this repository that contains
+1. Presentaton slides
+2. Labs
+3. Student specific resources
 
-### 1.2 Design Principles
-- Complete and proofed
+The student repository content consists of the Student folder and Labs folder in each module. 
 
-### 1.3 Program Architecture
-- Complete and proofed
+## VM environment
 
-### 1.4 Clean Code Basics
-- Complete and proofed
+The VM environment for the June 8 delivery is the same for the previous deliveries.
 
-### 1.5 Git Basics
-- Complete and proofed
+### Addition of AI tools
+ VSCode is already installed and comes with a Copilot extension. 
+ - The management of the Github Copilot accounts the students will be using up to Rocket and beyond what I can provide.
 
----
+### SQL Database
+There is no database in the VM but Docker is installed which means that the most effective solution is to use Docker to provide a database environment. 
 
-## Week 2 - OOP and SOLID Principles
+## Labs
+The original labs worked, but I feel they lacked sufficient content and guidance for the students. To maximize the value of the labs, I have been converting them to more of tutorial style
 
-### 2.1 Structured Program Design
-- Complete and proofed
+The original labs in each module have been moved to the "Original Labs" folder in the instructor folder in each module. This gives the instructor the option of using either the original labs or the new tutorial style labs.
 
-### 2.2 OO Program Design
-- Complete and proofed
+The executable code from the original labs was tested in the VM. The tutorial version of the old labs should work since the code was not changed. They were tested in a unix environment so they should be fine.
 
-### 2.3 Functional Program Design
-- Complete and proofed
+The AI based labs have not been tested in the VM environment. They have been tested in VCSode on Linux using my own GitHub Copilot account.
 
-### 2.4 SOLID
-- Complete and proofed
-
-### 2.5 Design Patterns
-- Complete and proofed
-
-### 2.6 APIs and REST
-- Complete and proofed
-
-## Week 3 - Real World Engineering
-
-### 3.1 Debugging
-- Complete and proofed
-
-### 3.2 Secure Coding
-- Complete and proofed
-
-### 3.3 UNIX Fundamentals
-- Complete and proofed
-
-### 3.4 Shell Scripting
-- Complete and proofed
-
-### 3.4 Application Architecture
-- Complete and proofed
-
-## Week 4 - Unit Testing, TDD, Mocking, CICD, Persistence
-
-### 4.1 Unit Testing
-- Complete and proofed
-
-### 4.2 Test Driven Development
-- Completed and proofed
-
-### 4.3 Refactoring
-- Completed and proofed
-
-### 4.4 CICD Basics
-- Completed and proofed
-
-### 4.5 Persistence
-- Completed and proofed

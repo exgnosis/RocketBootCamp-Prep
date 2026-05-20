@@ -24,6 +24,7 @@ All the new material is included but not necessarily in the weeks that Rocket sp
 4. Moved the Unit Testing module from week 4 to the end of week 3 to make room for the SQL material and Observability material to be added in week 4.
 
 The changes for week 1 and week to are already pushed to the repo. The changes for week three and four should follow later this week.
+
 ---
 
 ## Week 1 Clean Code and Git Mastery

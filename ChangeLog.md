@@ -10,6 +10,19 @@ These are the added requirements for the June 8 delivery. These are in addition 
 1. Addition of the use of AI throughout the course. Specific requirements are identified on a module by module basis
 2. Addition of introductory SQL material
 
+The learning plan supplied by Rocket rearranged the material into different weeks.
+
+I have avoided any reorganization of the original material in case the in class projects are designed to follow the original sequence
+
+All the new material is included but not necessarily in the weeks that Rocket specified. This was my decision to avoid any potential impact on the class projects. 
+
+### Changes to content organization 
+
+1. Added a Prompt Engineering module at the end of week 1
+2. Added a new module that is a continuation of the Prompt Engineering module from week 1. This module is focused on writing specifications for AI tools to use for direction. This module is at the start of week 3.
+3. Moved the Bash module into the Linux module 
+4. Moved the Unit Testing module from week 4 to the end of week 3 to make room for the SQL material and Observability material to be added in week 4.
+
 ---
 
 ## Week 1 Clean Code and Git Mastery
@@ -108,5 +121,22 @@ These are the added requirements for the June 8 delivery. These are in addition 
 
 ##### Lab 6-2 Copilot Design
 - This is the new lab that introduces a concept that will be elaborated on next week - the importance of writing a specification for an AI tool to use for direction
+
+---
+
+## Week 3 - Real World Engineering
+
+This week has been rearranged
+
+1. Added a new AI spec prompt module at the start
+2. Merged the bash module into the Linuxmodule
+3. Moved the unit testing module from week 4 to the end of this week to make room for the SQL material and observability material to be added in week 4. 
+
+I have tried to keep the sequence the same since I know the project builds on the original modules and I don't want to force a rewrite of the class project specification.
+
+### 1-1 Specification Prompts
+
+- This is new module that is an extension of the prompt engineering module.
+- 
 
 

@@ -139,6 +139,20 @@ I have tried to keep the sequence the same since I know the project builds on th
 ### 1-1 Specification Prompts
 
 - This is new module that is an extension of the prompt engineering module.
-- 
+
+### 1-2 Debugging
+- Rewrote the lab into the new format
+
+### 1-3 Security 
+- Rewrote the lab into the new format
+
+### 1-4 Linux and Bash
+- Merged the Linux and Bash modules
+- Rewrote the lab
+
+### 1-5 Application Architecture
+- Rewrote the lab
+
+
 
 

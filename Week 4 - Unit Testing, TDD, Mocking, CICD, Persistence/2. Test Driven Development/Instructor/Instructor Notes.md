@@ -1,4 +1,4 @@
-## Notes for Jonathan
+## Instructor Notes
 
 For this section, I just dumped the course I had written some time ago for the SSA on TDD.
 

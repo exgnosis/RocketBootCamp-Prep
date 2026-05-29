@@ -153,6 +153,24 @@ I have tried to keep the sequence the same since I know the project builds on th
 ### 1-5 Application Architecture
 - Rewrote the lab
 
+---
+
+## Week 4 - Unit Testing, TDD, Mocking, CICD, Persistence
+
+### 4-1 Unit testing
+- Rewrote lab to add section on copilot
+
+### 4-2 TDD
+- Minor changes
+
+### 4-3 Refactoring
+- Rewrote the lab to incldue copilot
+
+
+### 4-5 Persistence
+- Added section on SQL: slides, lab and quizz
+
+
 
 
 

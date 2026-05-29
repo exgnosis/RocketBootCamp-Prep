@@ -1,6 +1,9 @@
 # Lab 1-1 Myers Challenge
 
-## Recap
+This challenge was originally proposed by Genford Myers in his book _The Art of Software Testing_ to illustrate the systemic process of developing text cases.
+
+The image below describes the system to be tested
+- The reference to punch cards provides a clue as to how ancient this problem is
 
 <img src="Myers.png">
 
@@ -14,70 +17,10 @@ First though, regard the description in the image as a specification since it ac
 - Push back on the specification and identify what onr item needs to be added to it in order that is usable
 - Go through the IEEE properties list as a guide
 
-The one thing that you should have spotted is that the spec does not describe what should happen if the input is invalid
-- This is a common problem with specs, the people who write them tend to be focused on describing the valid cases and defer the invalid cases
-- For now, we will assume the spec has been changed to state that an invalid input will generate an error messsage
+At the end of the exercise, the instructor will ask you to respond to the following questions
 
-## Solution
+1. How many test cases did you come up with?
+2. Would you be able to describe the process you used to come up with the test cases?
+3. Given that there is such a variation in the test cases and the number of test cases in the class, how do we know which of these alternatives is the best? Are any of them adequate?
+4. If you had to revisit your test cases a year from now to update them for regression testing, would you be able to replicate the logic used to develop your test classes
 
-We can break the spec down into several criteria that have to be satisfied for the input to be valid
-1. There have to be three inputs
-2. They must be integers
-3. They must represent the sides of a triangle
-
-### Valid cases
-We can use equivalence classing to come up with three cases
-
-- V1: Equilateral (2, 2, 2) -> Equilateral
-- V2: Isosceles  (2, 2, 3) -> Isosceles
-- v3: Scalene  (2, 3, 4)  -> Scalete
-
-But we might also consider that the programmer might have messed up the logic comparing one of the sides, like the first input.
-- This is only going to affect how the sides of the isosceles are permuted, so we have two more cases
-
-- V4: Isosceles  (2, 3, 2) -> Isosceles
-- V5: Isosceles  (3, 2, 2) -> Isosceles
-
-This exhausts all the valid classes
-
-### Invalid cases 1
-
-The first requirement that can be broken to produce invalid input is the number of inputs.
-- We use boundary value analysis an just alter one of the valid cases test value to avoid introducing hidden errors
-
-- IV1: No input (always test the null case) () -> Error
-- IV2: Too few inputs (2, 2) -> Error
-- IV3: Too many inputs (2, 3, 4, 5) -> Error
-
-### Invalid cases 2
-
-The next requirement that can be broken to produce invalid input is that we have a non integer input
-- We will have to test for invalid input in each position
-- How is something not an integer?
-  - It is a real number
-  - It is not numeric
-
-- IV4: Non-numeric (2, 3, "4") -> Error
-- IV5: Non-numeric (2, "3", 4) -> Error
-- IV6: Non-numeric ("2", 3, ) -> Error
-- IV7: Non-integral (2, 3, 4.1) -> Error
-- IV8: Non-integral (2, 3.1, 4) -> Error
-- IV9: Non-integral (2.1, 3, ) -> Error
-
-### Invalid cases 3
-
-The next requirement that can be broken to produce invalid input is that we the integer represent the side of a triangle. This means
-- It is non negative
-- It is not zero
-- It satisfies the triangle inequality, the sum of any two sides must be greate than the third
-
-- IV10: Negative (2, 3, -4) -> Error
-- IV11: Negative (2, -3, 4) -> Error
-- IV12: Negative (-2, 3, ) -> Error
-- IV13: Zero (2, 3, 0) -> Error
-- IV14: Zero (2, 0, 4) -> Error
-- IV15: Zero (0, 3, ) -> Error
-- IV15: Not a triangle  (1, 2, 3) -> Error
-
-
-##e End

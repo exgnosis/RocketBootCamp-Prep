@@ -166,10 +166,12 @@ I have tried to keep the sequence the same since I know the project builds on th
 ### 4-3 Refactoring
 - Rewrote the lab to incldue copilot
 
-
 ### 4-5 Persistence
 - Added section on SQL: slides, lab and quizz
+- Added a new JPA slide deck and a rewriten JPA lab
 
+## Final To do 
+- Add the observability slides into 4-4 and the Grafana lab.
 
 
 

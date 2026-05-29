@@ -35,3 +35,8 @@ The following are the sections that should be covered in the manual for this cla
 
 That should be more than enough material for an SQL overview.
 - Depending on time and the level of the students' familiarity with the material, you can drop or add more content as you see fit.
+
+## JPA 
+
+The JPA lab is quite extensive. The important point is that the understand what the JPA framework is generating, the queries and the entity mappings to the database tables
+

@@ -30,6 +30,8 @@ I often have the students do group discussions and presentations on some of the 
 
 Use them however you think the class would benefit.
 
+**Don't feel obligated to use all the labs, just choose what you think would be appropriate for your class, and  modify as you see fit**
+
 You might also consider seeing what the sort of recent IT disasters are out there you can bring into class for a discussion.
 
 

@@ -174,5 +174,46 @@ I have tried to keep the sequence the same since I know the project builds on th
 - Add the observability slides into 4-4 and the Grafana lab.
 
 
+--- 
 
+# July 1, 2026
+
+A fifth week was added for the Enterprise section.
+
+I have adapted a number of slides from my Risk and Resilence materials since they are covering a lot of the same content mentioned in the spreadsheet.
+
+There are a couple of decks I have not included but will add them in later as supplements which the instructor can use or not as they see fit.
+
+### 1. Operational Thinking
+- Slides are done
+- Lab is done
+- Resources are done.
+- Quiz is done
+
+### 2. Failure Modes
+- Slides are done
+- Lab is done
+- Resources are done
+- Quiz is done
+
+### 3. Observability and Monitoring
+- Slides are done
+- Resources are done
+- Quiz is done
+
+### 4. Failure Analysis
+- Slides are done
+- Resources are done
+- Quiz is done
+
+### 5. Resilence 
+- Slides are done
+- Resources are done
+- Quiz is done
+
+## To be done
+
+The lab for units 3-5 is a case study similar to AWS outage. For each part, students will be required to  perform and analysis. The case is in the lab folder in Unit 3.
+
+The problem statements for the actual labs will be uploaded on July 3.
 

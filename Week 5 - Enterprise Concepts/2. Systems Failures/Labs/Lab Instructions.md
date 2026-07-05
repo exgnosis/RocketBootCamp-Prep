@@ -18,6 +18,6 @@ Each group should analyze both of the case students and provide a report and ana
 
 In the following units, we will return to these two case studies and look at how we would do risk management and resilience planning for these systems.
 
-For your group's presentation, stick to an analysis that is grounded in only the facts presented. Do not offer recommendations for corrective action, you will do that later. Just focus on developng a critical analysis of the events as they happened.
+For your group's presentation, stick to an analysis that is grounded in only the facts presented. Do not offer recommendations for corrective action, you will do that later. Just focus on developing a critical analysis of the events as they happened.
 
 
